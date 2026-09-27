@@ -1,0 +1,184 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="rvsKJIwR718kXRtB1hv_">
+    <mxGraphModel dx="2722" dy="2211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="czMxsCaiOEvJSOtubrwW-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="970" width="550" x="320" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Пользователь" vertex="1">
+          <mxGeometry height="60" width="30" x="180" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Регистрация в системе" vertex="1">
+          <mxGeometry height="80" width="120" x="354" y="-290" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="-20" as="sourcePoint" />
+            <mxPoint x="270" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Вход в систему" vertex="1">
+          <mxGeometry height="80" width="120" x="450" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="-20" as="sourcePoint" />
+            <mxPoint x="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Выход из системы" vertex="1">
+          <mxGeometry height="80" width="120" x="700" y="-270" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="-20" as="sourcePoint" />
+            <mxPoint x="520" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Создать пост" vertex="1">
+          <mxGeometry height="80" width="120" x="610" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="10" as="sourcePoint" />
+            <mxPoint x="600" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Посмотреть свои постов" vertex="1">
+          <mxGeometry height="80" width="120" x="500" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="10" as="sourcePoint" />
+            <mxPoint x="290" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Редактировать свой пост" vertex="1">
+          <mxGeometry height="80" width="120" x="530" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Поиск пользователя по имения" vertex="1">
+          <mxGeometry height="80" width="120" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Поставить лайк на пост" vertex="1">
+          <mxGeometry height="80" width="120" x="470" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Удалить свой пост" vertex="1">
+          <mxGeometry height="80" width="120" x="707" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-50" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор" vertex="1">
+          <mxGeometry height="60" width="30" x="200" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-52" edge="1" parent="1" source="czMxsCaiOEvJSOtubrwW-50" style="endArrow=blockThin;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;startSize=10;endSize=23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="140" y="460" as="sourcePoint" />
+            <mxPoint x="190" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-53" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Удалить пост" vertex="1">
+          <mxGeometry height="80" width="120" x="450" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-54" edge="1" parent="1" source="czMxsCaiOEvJSOtubrwW-50" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="czMxsCaiOEvJSOtubrwW-53" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="308.5" y="470" as="sourcePoint" />
+            <mxPoint x="358.5" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-62" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-47" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="40" as="sourcePoint" />
+            <mxPoint x="290" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-63" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="50" as="sourcePoint" />
+            <mxPoint x="290" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-65" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="60" as="sourcePoint" />
+            <mxPoint x="640" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-66" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="50" as="sourcePoint" />
+            <mxPoint x="460" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Подписаться на пользователя" vertex="1">
+          <mxGeometry height="80" width="120" x="463.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-68" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Просмотр постов пользлователя" vertex="1">
+          <mxGeometry height="80" width="120" x="540" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-69" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-68" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="60" as="sourcePoint" />
+            <mxPoint x="490" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-70" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-67" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="170" />
+            </Array>
+            <mxPoint x="240" y="80" as="sourcePoint" />
+            <mxPoint x="540" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Выдать предупреждение пользователю" vertex="1">
+          <mxGeometry height="80" width="120" x="460" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-72" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Заблокировать аккаунт пользователя&amp;nbsp;" vertex="1">
+          <mxGeometry height="95" width="193" x="427" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-73" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-71" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="460" as="sourcePoint" />
+            <mxPoint x="520.5" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-74" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-72" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="490" as="sourcePoint" />
+            <mxPoint x="480.5" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-78" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="BlogSystem" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="-310" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Убрать лайк с поста" vertex="1">
+          <mxGeometry height="80" width="120" x="587" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-82" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-79" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="70" as="sourcePoint" />
+            <mxPoint x="330" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-83" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Просмотр конкретного поста" vertex="1">
+          <mxGeometry height="80" width="120" x="380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-84" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="70" as="sourcePoint" />
+            <mxPoint x="380" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-85" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Оставить коментарий" vertex="1">
+          <mxGeometry height="80" width="120" x="320" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="czMxsCaiOEvJSOtubrwW-86" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="czMxsCaiOEvJSOtubrwW-85" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="70" as="sourcePoint" />
+            <mxPoint x="250" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
