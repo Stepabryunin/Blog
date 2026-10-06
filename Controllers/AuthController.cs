@@ -56,6 +56,8 @@ namespace Blog.Controllers
             var res = await _authService.Logout(userId,token.Token);
             return res.ToAction();
         }        
+
+     
         
     }
 }

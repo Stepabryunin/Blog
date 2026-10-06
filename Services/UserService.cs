@@ -44,6 +44,28 @@ namespace Blog.Services
                 }
             return false;
         }
+        public async Task<Result<PagesObject<UserToFront>>> GetAllUsersByUsernameAsync(string username, int page=1, int pageSize=20)
+        {
+            if (page<1)
+                page=1;
+            if (pageSize<1)
+                pageSize=20;
+            if (pageSize>20)
+                pageSize=20;
+            List<UserToFront> res = await _db.Users
+                .AsNoTracking()
+                .Where(u => u.Username.StartsWith(username))
+                .OrderBy(u=>u.Username)
+                .Skip((page-1)*pageSize)
+                .Take(pageSize)
+                .Select(u => new UserToFront(u.Username,u.Email))
+                .ToListAsync();
+            int total = await _db.Users
+                .AsNoTracking()
+                .Where(u=>u.Username.StartsWith(username))
+                .CountAsync();
+            return new Result<PagesObject<UserToFront>>(ResultStatus.Ok, new PagesObject<UserToFront>(res,total,page,pageSize),null);
+        }
         
         
 

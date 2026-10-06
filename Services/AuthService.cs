@@ -9,7 +9,7 @@ using Blog.DTO;
 using Blog.Entity;
 namespace Blog.Services
 {
-    public class AuthService
+    public class AuthService:IAuthService
     {
         private readonly IConfiguration _config;
         private readonly IUserService _userService;

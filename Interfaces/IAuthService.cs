@@ -7,7 +7,7 @@ namespace Blog.Interfaces
             public Task<Result<AuthResult>> CreateUser(CreatedUser User);
             public Task<Result<AuthResult>> Login(LoginUser User);
             public Task<Result<AuthResult>> Refresh(RefreshTokenDTO Token);
-            public Task<Result<AuthResult>> Logout(Guid userId,string token);
+           public Task<Result<bool>> Logout(Guid userId,string token);
 
     }
 }

@@ -7,6 +7,12 @@ namespace Blog.Entity
 
         public Post? Post {get;set;}
         public User? User{get;set;}
+
+        public Like(Guid userId, Guid postId)
+        {
+            UserId=userId;
+            PostId=postId;
+        }
     }
 
 
