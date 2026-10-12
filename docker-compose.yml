@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: postgres_cont
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=Blog
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d Blog"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: blog_cont
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings__BaseConnection=Host=postgres;Port=5432;Database=Blog;Username=postgres;Password=postgres"
+      - JwtOptions__Issuer=MyComputer
+      - JwtOptions__Key=SuperPuperSecurityKeyWithManyInformationForHakerAndSome19371yhh1ws9bg67171ysz8y890y90y09a6ytbs78ta987tb8a7tbantaysho
+      - JwtOptions__Audiencer=MyClient
+    ports:
+      - "8081:8080"
+
+volumes:
+  postgres_data:

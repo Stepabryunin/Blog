@@ -17,6 +17,9 @@ namespace Blog.Entity
         public List<Comment> Comments {get;set;} = new();
         public List<Like> Likes {get;set;} = new();
 
+        public List<Follow> Followers {get;set;} = new();
+        public List<Follow> Followings {get;set;} = new();
+
         public User(string username, string email, string passwordHash, RoleEnum role)
         {
             Id = Guid.NewGuid();

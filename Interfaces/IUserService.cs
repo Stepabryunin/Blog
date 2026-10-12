@@ -11,5 +11,7 @@ namespace Blog.Interfaces
         public Task<User?> GetUserByUsernameAsync(string username);
         public Task<Result<PagesObject<UserToFront>>> GetAllUsersByUsernameAsync(string username, int page=1, int pageSize=100);
 
+
+        
     }
 }

@@ -37,5 +37,15 @@ namespace Blog.Controllers
             var res = await _likeService.DeleteLikeAsync(userId, postId);
             return res.ToAction();
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetCountLikeBuPoost([FromQuery] Guid postId)
+        {
+            var res = await _likeService.GetLikeByPostAsync(postId);
+            return res.ToAction();
+        }
+
+        
     }
 }

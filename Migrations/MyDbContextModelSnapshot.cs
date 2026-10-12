@@ -56,6 +56,21 @@ namespace blog.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("Blog.Entity.Follow", b =>
+                {
+                    b.Property<Guid>("FollowerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("FollowingId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("FollowerId", "FollowingId");
+
+                    b.HasIndex("FollowingId");
+
+                    b.ToTable("Followers");
+                });
+
             modelBuilder.Entity("Blog.Entity.Like", b =>
                 {
                     b.Property<Guid>("PostId")
@@ -80,7 +95,7 @@ namespace blog.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DeleteddAt")
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
@@ -179,6 +194,25 @@ namespace blog.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Blog.Entity.Follow", b =>
+                {
+                    b.HasOne("Blog.Entity.User", "Follower")
+                        .WithMany("Followers")
+                        .HasForeignKey("FollowerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Blog.Entity.User", "Following")
+                        .WithMany("Followings")
+                        .HasForeignKey("FollowingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Follower");
+
+                    b.Navigation("Following");
+                });
+
             modelBuilder.Entity("Blog.Entity.Like", b =>
                 {
                     b.HasOne("Blog.Entity.Post", "Post")
@@ -230,6 +264,10 @@ namespace blog.Migrations
             modelBuilder.Entity("Blog.Entity.User", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Followers");
+
+                    b.Navigation("Followings");
 
                     b.Navigation("Likes");
 

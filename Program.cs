@@ -24,6 +24,7 @@ builder.Services.AddScoped<IAuthService,AuthService>();
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<LikeMapper>();
 builder.Services.AddScoped<ILikeInterface, LikeService>();
+builder.Services.AddScoped<IFollowerService, FollowerService>();
 builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
@@ -36,6 +37,11 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/openapi/v1.json", "Blog API v1"));
+}
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<MyDbContext>();
+    db.Database.Migrate();
 }
 
 app.UseHttpsRedirection();

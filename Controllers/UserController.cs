@@ -1,7 +1,9 @@
+using System.Security.Claims;
 using blog.Context;
 using Blog.DTO;
 using Blog.Entity;
 using Blog.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Controllers
@@ -22,5 +24,7 @@ namespace Blog.Controllers
             var res = await _userService.GetAllUsersByUsernameAsync(username,page,pageSize);
             return res.ToAction();
         }
+
+
     }
 }

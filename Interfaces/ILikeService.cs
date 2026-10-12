@@ -7,5 +7,6 @@ namespace Blog.Interfaces
     {
         public Task<Result<LikeDTO>> CreateLikeAsync(Guid userId, Guid postId);
         public Task<Result<bool>> DeleteLikeAsync(Guid userId, Guid postId);
+        public Task<Result<int>> GetLikeByPostAsync(Guid postId);
     }
 }

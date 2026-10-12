@@ -12,6 +12,7 @@ namespace blog.Context
         public DbSet<Post> Posts {get;set;} = null!;
         public DbSet<Like> Likes {get;set;} = null!;
         public DbSet<Comment> Comments {get;set;} = null!;
+        public DbSet<Follow> Followers {get;set;} = null!;
 
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
@@ -65,6 +66,20 @@ namespace blog.Context
                 entity.HasOne(c =>c.User)
                     .WithMany(u=>u.Comments)
                     .HasForeignKey(c=>c.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Follow>(entity=>
+            {
+                entity.HasKey(f => new {f.FollowerId, f.FollowingId});
+
+                entity.HasOne(f=>f.Follower)
+                    .WithMany(u=>u.Followers)
+                    .HasForeignKey(f=>f.FollowerId)
+                    .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(f=>f.Following)
+                    .WithMany(u=>u.Followings)
+                    .HasForeignKey(f=>f.FollowingId)
                     .OnDelete(DeleteBehavior.Cascade);
             });
         }

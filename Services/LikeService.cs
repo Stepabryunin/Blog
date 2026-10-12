@@ -34,8 +34,17 @@ namespace Blog.Services
             if (like==null)
                 return new Result<bool>(ResultStatus.NotFound, false, "Лайка не стоит");
             _db.Likes.Remove(like);
-            await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync(); 
             return new Result<bool>(ResultStatus.NoContent,false,null);
+        }
+
+        public async Task<Result<int>> GetLikeByPostAsync(Guid postId)
+        {
+            var count_like = await _db.Likes
+                .AsNoTracking()
+                .Where(l=> l.PostId==postId)
+                .CountAsync();
+            return new Result<int>(ResultStatus.Ok,count_like,null);
         }
 
         
